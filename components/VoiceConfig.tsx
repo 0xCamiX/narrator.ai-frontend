@@ -108,7 +108,7 @@ export default function VoiceConfig({ onConfigChange }: VoiceConfigProps) {
             Speed: {speed.toFixed(1)}x
           </label>
           <Slider
-            min={0.5}
+            min={0.2}
             max={2}
             step={0.1}
             value={[speed]}
