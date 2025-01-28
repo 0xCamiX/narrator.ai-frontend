@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Narrator AI
 
-## Getting Started
+Este es un proyecto de [Next.js](https://nextjs.org)
 
-First, run the development server:
+## Funcionalidades
+
+1. **Texto a Voz**: Convierte texto escrito en voz utilizando Azure Speech.
+2. **Descargar el archivo .mp3**: Permite descargar el archivo de audio generado en formato .mp3.
+
+## Tecnologías Utilizadas
+
+- **Frontend**: Next.js, TailwindCSS, ShadcnUI
+- **Backend**: FastAPI
+- **Servicios de IA**: Azure AI Cognitive Services, Azure Speech
+
+## Instalación y Ejecución
+
+Primero, clona el repositorio y navega al directorio del proyecto:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/tu-usuario/narrator-ai.git
+cd narrator-ai/frontend
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+npm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Configuración del Backend
 
-## Learn More
+El backend está construido con FastAPI y utiliza Azure AI Cognitive Services para la conversión de texto a voz. Asegúrate de configurar tus credenciales de Azure en el backend.
 
-To learn more about Next.js, take a look at the following resources:
+## Funcionalidades Futuras
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Autenticación: Implementar autenticación de usuarios.
+- Cobro por Uso: Añadir funcionalidad para cobrar a los usuarios por el uso del servicio.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contribuciones
+Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para discutir cualquier cambio que desees realizar.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Licencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles
